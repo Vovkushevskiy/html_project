@@ -40,3 +40,59 @@
     }
   }
 }
+
+.header-navbar__btn {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  margin: 50px auto;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.header-navbar__btn {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #d3531a;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.header-navbar__btn span:nth-child(1) {
+  top: 0px;
+}
+
+.header-navbar__btn span:nth-child(2),
+.header-navbar__btn span:nth-child(3) {
+  top: 18px;
+}
+
+.header-navbar__btn span:nth-child(4) {
+  top: 36px;
+}
+
+.header-navbar__btn.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.header-navbar__btn .open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.header-navbar__btn .open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.header-navbar__btn .open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}

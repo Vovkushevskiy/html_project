@@ -4,7 +4,14 @@
 $local-gap: math.div(40px, 3);
 
 .skills {
-  padding: $gap-sm;
+
+  @include sm-min {
+    padding: $gap-sm;
+  }
+
+  @include sm {
+    padding: $gap
+  }
 
   &__container {
     display: grid;
@@ -49,6 +56,9 @@ $local-gap: math.div(40px, 3);
     display: flex;
     justify-content: center;
 
-    margin-bottom: $gap-lg;
+    @include sm-min {
+      margin-bottom: $gap-lg;
+    }
+
   }
 }
