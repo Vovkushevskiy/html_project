@@ -24,37 +24,35 @@
     background-color: rgba($color-light, 0.1);
 
     @include lg-min {
-      font-size: 1.125rem;
       width: 250px;
       height: 60px;
-    }
 
+      font-size: 1.125rem;
+    }
     @include lg-md {
       width: 200px;
       height: 50px;
     }
-
     @include md {
       width: 170px;
       height: 40px;
     }
-
   }
 
   &--primary {
-    font-size: 1.125rem;
     height: 60px;
+
+    border-color: $color-primary;
+    background-color: rgba($color-primary, 0.8);
+
+    font-size: 1.125rem;
 
     @include sm-min {
       width: 350px;
     }
-
     @include sm {
       width: 100%;
     }
-
-    border-color: $color-primary;
-    background-color: rgba($color-primary, 0.8);
   }
 }
 
