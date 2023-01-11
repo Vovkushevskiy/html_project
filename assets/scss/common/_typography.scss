@@ -24,9 +24,11 @@ h1 {
   @include lg-min {
     font-size: 3.75rem;
   }
+
   @include lg-md {
     font-size: 2.5rem;
   }
+
   @include md {
     font-size: 1.875rem;
   }
@@ -34,10 +36,17 @@ h1 {
 
 h2 {
   font-family: $font-header;
+  letter-spacing: 0.1em;
+  color: $color-primary;
+  line-height: 1.2em;
 }
 
 a {
   text-decoration: none;
 
   color: $color-light;
+}
+
+p {
+  color: $color-gray;
 }
