@@ -8,6 +8,7 @@
   background-color: $color-gray-light;
   letter-spacing: 0.055em;
 
+
   &__container {
     display: grid;
     max-width: 1340px;
@@ -48,9 +49,6 @@
 
 p:first-of-type::after {
   right: -50px;
-}
-
-p:first-of-type::after {
   position: absolute;
   top: 0;
   width: 2px;

@@ -1,14 +1,20 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
 
+
+.form {
+  background-color: $color-primary;
+  padding: 30px 0;
+}
+
 .form-container {
   display: grid;
-  gap: 20px;
+  gap: $gap;
   grid-template-columns: repeat(3, 1fr);
   max-width: 1340px;
   margin: auto;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: $gap;
+  padding-left: $gap;
 }
 
 .form-item__input {
@@ -25,28 +31,20 @@
   background-color: rgba(255, 255, 255, 0.05);
   font-size: 1.125rem;
 
-
   &:hover {
     transition: background-color 0.5s, border-color 0.5s;
   }
-
-}
-
-.form {
-  background-color: $color-primary;
-  padding: 30px 0;
 }
 
 form .btn--primary {
   width: 100%;
-  color: #ffffff;
+  color: $color-light;
 
   border-bottom-color: rgba(255, 255, 255, 0.2);
   background-color: rgba(255, 255, 255, 0.1);
 
-
   &:hover {
     background-color: $color-accent;
-    border-color: #ffffff;
+    border-color: $color-light;
   }
 }
