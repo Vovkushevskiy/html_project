@@ -56,3 +56,9 @@ p:first-of-type::after {
   content: "";
   background-color: rgba(99, 117, 136, 0.1);
 }
+
+
+p:first-of-type {
+  position: relative;
+  margin-top: -5px;
+}
